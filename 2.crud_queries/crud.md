@@ -89,6 +89,7 @@ db.articles.update({_id: 23}, {$push: {tags: 'node'}})
 { "_id" : 23, "title" : "intro to mongodb", "tags" : [ "database", "mongo", "node" ] }
 
 
+
 //Adding multiple tags in array
 db.articles.update({_id: 23}, {$push: {tags: {$each: ['js', 'NoSQL']}}})
 ```
